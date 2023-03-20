@@ -1,0 +1,6 @@
+[submodule "sentencepiece"]
+	path = sentencepiece
+	url = https://github.com/google/sentencepiece.git
+[submodule "arabic_corpus"]
+	path = arabic_corpus
+	url = https://github.com/tarekeldeeb/arabic_corpus
