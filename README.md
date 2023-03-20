@@ -4,6 +4,11 @@ Natural Language Processing is a branch of AI. One of the first steps in any NLP
 Sub-word encoding is very suitable to arabic. For example the word `مدرساتهم` will not be considered a single token/word, but split into three; `مدرس`, `ات`, and `هم`. This is the basic intuition.
 This process is done automatically without any rules or preprocessing.
 
+### Motive
+I have came across different project with the same intention, but the results were not satisfying.
+ - Low quality: https://arxiv.org/pdf/1710.02187v1.pdf seems to be a scripted work without any manual lingual review. 
+ - Small datasets: https://aclanthology.org/W19-4602.pdf with focus on arabic dialects not MSA.
+
 ## Prerequisites
 Tested on: Ubuntu 22.04
 ```
