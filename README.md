@@ -9,18 +9,20 @@ I have came across different project with the same intention, but the results we
  - Low quality: https://arxiv.org/pdf/1710.02187v1.pdf seems to be a scripted work without any manual lingual review. 
  - Small datasets: https://aclanthology.org/W19-4602.pdf with focus on arabic dialects not MSA.
 
-## Prerequisites
+## Workflow
+
+### Prerequisites
 Tested on: Ubuntu 22.04
 ```
 sudo apt-get install wget xz cmake build-essential pkg-config libgoogle-perftools-dev
 ```
 
-## Download the Arabic Corpus
+### Download the Arabic Corpus
 ```
 ./arabic_corpus/download_corpus.sh
 ````
 
-## Build Sentaince Piece
+### Build Sentaince Piece
 ```
 mkdir sentencepiece/build
 cd sentencepiece/build
@@ -30,7 +32,7 @@ sudo make install
 sudo ldconfig -v
 ```
 
-## Training on the Arabic Corpus
+### Training on the Arabic Corpus
 ```
 TBD ..
 ```
