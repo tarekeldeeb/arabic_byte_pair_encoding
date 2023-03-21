@@ -21,7 +21,11 @@ sudo apt-get install wget xz cmake build-essential pkg-config libgoogle-perftool
 ```
 ./arabic_corpus/download_corpus.sh
 ````
-
+This corpus has no lines, just a large stream of strings. Sentence Piece expects to read each sentence on a line. Thus we need to break the corpus to the max sentence length:
+```
+fold -s -b -w4192 arabic_corpus/arabic_corpus > arabic_corpus/arabic_corpus_lines
+rm -f arabic_corpus/arabic_corpus
+```
 ### Build Sentaince Piece
 ```
 mkdir sentencepiece/build
@@ -34,5 +38,5 @@ sudo ldconfig -v
 
 ### Training on the Arabic Corpus
 ```
-TBD ..
+spm_train --input=arabic_corpus/arabic_corpus_lines --model_prefix=ar8k --vocab_size=8000 --character_coverage=1.0 --model_type=bpe
 ```
