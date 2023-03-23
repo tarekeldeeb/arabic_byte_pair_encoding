@@ -14,7 +14,7 @@ I have came across different project with the same intention, but the results we
 ### Prerequisites
 Tested on: Ubuntu 22.04
 ```
-sudo apt-get install wget xz cmake build-essential pkg-config libgoogle-perftools-dev
+sudo apt-get install wget xz-utils cmake build-essential pkg-config libgoogle-perftools-dev
 ```
 
 ### Download the Arabic Corpus
