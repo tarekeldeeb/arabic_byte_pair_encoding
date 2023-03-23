@@ -23,7 +23,10 @@ sudo apt-get install wget xz-utils cmake build-essential pkg-config libgoogle-pe
 ````
 This corpus has no lines, just a large stream of strings with Windows-1256 encoding. Sentence Piece expects to read each sentence on a line with UTF-8 encoding. Thus we need to break the corpus to the max sentence length:
 ```
-fold -s -b -w2096 arabic_corpus/arabic_corpus | head -n 1000000 | iconv -f WINDOWS-1256 -t UTF-8 > arabic_corpus/arabic_corpus_lines
+fold -s -b -w2096 arabic_corpus/arabic_corpus \
+   | head -n 1000000 \
+   | iconv -f WINDOWS-1256 -t UTF-8 \
+   > arabic_corpus/arabic_corpus_lines
 rm -f arabic_corpus/arabic_corpus
 ```
 ### Build Sentaince Piece
