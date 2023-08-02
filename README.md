@@ -1,4 +1,4 @@
-# Arabic BPE Tokenization Using Google Sentance Piece
+# Arabic BPE Tokenization Using Google Sentence Piece
 
 Natural Language Processing is a branch of AI. One of the first steps in any NLP system is language model encoding. The challenge is how to present/encode the words efficiently.
 Sub-word encoding is very suitable to arabic. For example the word `مدرساتهم` will not be considered a single token/word, but split into three; `مدرس`, `ات`, and `هم`. This is the basic intuition.
